@@ -56,14 +56,14 @@ def findEfficientSolution():
 optimalSolutions = []
 
 for i in range(100):
+    print(i)
     optimalSolutions.append(findEfficientSolution())
 
 optimalSolutions.sort(key=lambda x:x[1])
 print(optimalSolutions[0])
 print(optimalSolutions[-1])
 
-tentets = 30*[[33, 33, 34, 0, 0, 0, 0, 0, 0, 0]]
-
+tentets = [[33, 33, 34, 0, 0, 0, 0, 0, 0, 0], [0, 0, 35, 32, 33, 0, 0, 0, 0, 0], [0, 0, 36, 32, 32, 0, 0, 0, 0, 0]] + 29*[[33, 33, 34, 0, 0, 0, 0, 0, 0, 0]] + 29*[[0, 0, 35, 32, 33, 0, 0, 0, 0, 0]]
 for solution in optimalSolutions:
     tentets.append(solution[0])
     
