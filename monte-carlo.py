@@ -36,7 +36,7 @@ def hasStandardWon(standard, toCompare):
 
 # Finds the most successful castle arrangement by battling each entry with all other entries
 def findEfficientSolution():
-    tentets = [[33, 33, 34, 0, 0, 0, 0, 0, 0, 0]]
+    tentets = []
     while (len(tentets) < TOTALNUM):
         tentets.append(constrainedSumSamplePos(10, 100))
     
